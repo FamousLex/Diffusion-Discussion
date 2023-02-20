@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diffusion Discussion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Diffusion Discussion</h1>
+    <h2 id="dateRange">May 8th - May 14th, 2022</h2>
+  </header>
+  <main>
+    <div id="mainVideo">
+      <video id="currentVideo" controls="controls" loop autoplay muted>
+        <source src="videos/thisWeek.mp4" id="videoSource">
+      </video>
+      <p id="trendingTerms">Trending Search Terms: Happy Mother's Day | Celtics | Warriors vs Grizzlies | Warriors | Miami Heat | Lil Keed | Buffalo</p>
+    </div>
+    <div class="pastVidsContainer">
+      <div id="fourWeeksAgo" class="pastVid" onclick="changeVideo4Weeks()">
+        <img src="thumbnails/4Weeks.png" class="thumbnails" id="fourWeeksThumbnail">
+        <h2 class="thumbnailText" id="fourWeeksAgoText">April 10th - April 16th, 2022</h2>
+      </div>
+      <div id="threeWeeksAgo" class="pastVid" onclick="changeVideo3Weeks()">
+        <img src="thumbnails/3Weeks.png" class="thumbnails" id="threeWeeksThumbnail">
+        <h2 class="thumbnailText" id="threeWeeksAgoText">April 17th - April 23rd, 2022</h2>
+      </div>
+      <div id="twoWeeksAgo" class="pastVid" onclick="changeVideo2Weeks()">
+        <img src="thumbnails/2Weeks.png" class="thumbnails" id="twoWeeksThumbnail">
+        <h2 class="thumbnailText" id="twoWeeksAgoText">April 24th - April 30th, 2022</h2>
+      </div>
+      <div id="oneWeekAgo" class="pastVid" onclick="changeVideo1Week()">
+        <img src="thumbnails/1Week.png" class="thumbnails" id="oneWeekThumbnail">
+        <h2 class="thumbnailText" id="oneWeekAgoText">May 1st - May 7th, 2022</h2>
+      </div>
+    </div>
+  </main>
+  <footer>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
